@@ -105,14 +105,15 @@ export default function App() {
       });
   };
 
-  const {id, email, profile_image_url: photo} = profile;
+  const {id, email, profile_image_url: photo, age_range, phone_number, nickname } = profile;
 
   return (
     <View style={styles.container}>
       <View style={styles.profile}>
         <Image style={styles.profilePhoto} source={{uri: photo}} />
-        <Text>{`id : ${id}`}</Text>
-        <Text>{`email : ${email}`}</Text>
+   
+        <Text>{phone_number}</Text>
+        <Text>{nickname}</Text>
       </View>
       <View style={styles.content}>
         <Text style={styles.token}>{token}</Text>
